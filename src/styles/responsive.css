@@ -1,0 +1,95 @@
+@media screen and (min-width: 660px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  .app-bar .app-bar-brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar-menu {
+    display: none;
+  }
+
+  .app-bar .app-bar-navigation {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .app-bar .app-bar-navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar-navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .restos {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+
+  .resto-info {
+    display: flex;
+    gap: 20px;
+  }
+
+  .resto-meal {
+    display: flex;
+    gap: 30px;
+  }
+
+  .resto-info .information {
+    margin-top: 0;
+  }
+
+  .resto-meal .resto-drink {
+    margin-top: 0;
+  }
+
+  .resto .resto-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .resto .resto-overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar-brand h1 {
+    font-size: 2em;
+  }
+
+  #review-form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .restos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .restos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
